@@ -215,7 +215,7 @@ class TSP
   attr_accessor :adj_matrix #adjacency matrix
 
   #reads the cities from the specified input.
-  #if no input file is specified as an argument, it takes the input data from STDIN
+  #if no input file is specified as an argument, it takes the input data from default input location: ./cities.txt
   def read_cities_from_input!
     file = nil
 
