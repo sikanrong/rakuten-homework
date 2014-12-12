@@ -203,9 +203,16 @@ class TSP
 
     while(node.visited_this_tour.size < @@cities.size)
       node.create_children!
-      children = node.children
-      raise children.min.inspect
+
+      best_node = node.children.min
+      node = best_node
     end
+
+
+    node.visited_this_tour.each do |city_id|
+      puts @@cities[city_id][:name]
+    end
+
 
   end
   
