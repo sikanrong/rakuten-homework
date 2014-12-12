@@ -231,7 +231,8 @@ class TSP
         @@cities[idx] = {:name=>line_ar[0], :location=>Vector[line_ar[1].to_f, line_ar[2].to_f]}
     end
   end
-  
+
+  #Calculates a matrix of the distances between all cities. Stores in @adj_matrix
   def calculate_adjacency_matrix!
     @adj_matrix = Matrix.build(@@cities.length) do |i,j|
 
