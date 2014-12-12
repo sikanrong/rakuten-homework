@@ -1,5 +1,0 @@
-Beijing	39.93	116.40
-Tokyo	35.40	139.45
-Vladivostok	43.8	131.54
-Dakar	14.40	-17.28
-Singapore	1.14	103.55

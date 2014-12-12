@@ -222,7 +222,7 @@ class TSP
     if(ARGV[0] and not ARGV[0].empty?)
       file = File.open(ARGV[0], "r")
     else
-      file = ARGF
+      file = File.open("cities.txt", "r")
     end
 
     file.each_with_index do |line, idx|
